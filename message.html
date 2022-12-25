@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send a message</title>
+
+    <link rel="stylesheet" href="/css/message.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Send a message!</h1><br><br>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div><br>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div><br>
+            <div class="sendmessage">
+                <label for="text">Send a message</label>
+                <textarea class="textarea" id="textarea"></textarea></p>
+                <div class="error"></div>
+            </div><br>
+            <button type="submit" class="btn">Send!</button>
+        </form>
+    </div>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            var inputValue =
+                   document.getElementById('username').value;
+                   document.getElementById('email').value;
+                   document.getElementById('textarea').value;
+
+  if (inputValue === '') {
+    alert('Error: Mbushi te gjitha fushat. ');
+  } else {
+    console.log(inputValue);
+    document.getElementById('form').submit();
+  }
+}
+   document.getElementById('form').addEventListener('submit', handleFormSubmit);
+
+
+    </script>
+</body>
+</html>
