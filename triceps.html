@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@media only screen and (max-width: 1060px){
+  .videos, img {
+    flex: 70%;
+    width: 33.33%;
+    height: 100%;
+  }
+  .content {
+    flex: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+.videos, img {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+body{
+  background: linear-gradient(to right, #eeff00, #ffae00, #ff0000);
+}
+.content {
+border-radius: 15px;
+padding: 5px 30px;
+color: black;
+width: auto;
+height: 100%;
+font-family: "Poppins", sans-serif;
+}
+h3 {
+
+margin-left: 45%;
+font-size: 48px;
+}
+img {
+max-width: 100%;
+flex-direction: row;
+border-radius: 15px;
+border: 1px solid black;
+width: 500px;
+height: 500px;
+object-fit: cover;
+}
+.videos {
+width: 100%;
+border-radius: 15px;
+justify-content: space-between;
+display: inline-flex;
+border: 2px solid black;
+display: flex;
+flex-wrap: wrap;
+}
+.steps-list li{
+border-radius: 15px;
+background: rgba(204, 204, 204, 0.589);
+box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+font-size:1.5rem;
+margin: 0 0 1.5rem 1em;
+padding: 10px 15px 10px 35px;
+position: relative;
+}
+.steps-list li::before{
+background:#f7d307;
+border-radius:40px;
+box-shadow:0 0 3px rgba(0,0,0,.4),0 0 0 5px #ffffff,5px 0 2px rgba(0,0,0,.6);
+color:rgb(37, 37, 37);
+content: "➤";
+font-weight:700;
+height:40px;
+line-height:40px;
+left:-1.2em;
+position:absolute;
+text-align:center;
+top:50%;
+transform:translateY(-50%);
+width:40px;
+}
+.goback{
+  position: fixed;
+  right: 12px;
+  bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.726);
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goback button{
+  background: transparent;
+  border: none;
+  color: #e8f715;
+  font-size: 16px;
+}
+.goback button:hover{
+  cursor: pointer;
+}
+
+
+</style>
+<body>
+
+<div class="content">
+  <h3>Triceps</h3>
+  <h2>Close Grip Bench Press</h2>
+  <div class="videos">
+    <img src="https://media.tenor.com/TgbVYDE_Ea4AAAAC/dokuz-close-grip-barbell-press.gif" class="video1">
+    <img src="https://workouts4fitness.files.wordpress.com/2017/05/close-grip-barbell-bench-press1.gif" class="video2">
+  </div>
+  <ul class="steps-list">
+    <li>Shtrihuni në stol me këmbët tuaja në tokë. Me një shtrëngim të ngushtë në shirit, drejtoni krahët.</li>
+    <li>Uleni shiritin në gjoksin tuaj nga poshtë-mesi.</li>
+    <li>Ngadalë ngrini shiritin derisa të keni mbyllur bërrylat.</li>
+  </ul>
+  <h2>Dumbbell Skullcrusher</h2>
+  <div class="videos">
+    <img src="https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/assets/skull.gif?resize=480:*" class="video1">
+    <img src="https://www.verywellfit.com/thmb/tiq-lnBY1c5HO9Xhr2zHzFyk8sY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/94-3498313--Lying-triceps-extenGIF-0d0e624392d74f9897a698fbe5c4ea3b.gif" class="video2">
+  </div>
+  <ul class="steps-list">
+    <li>Shtrihuni në dysheme ose në një stol me grushtat të shtrirë deri në tavan dhe një dorezë neutrale.</li>
+    <li>Thyejeni në bërryla derisa grushtat të jenë pranë tëmtheve. Më pas zgjasni bërrylat dhe përkulni tricepsin në majë.</li>
+  </ul>
+  <h2>Bench Dips</h2>
+  <div class="videos">
+    <img src="https://thumbs.gfycat.com/FittingImpassionedAmethystinepython-max-1mb.gif" class="video1">
+    <img src="https://thumbs.gfycat.com/ObviousSpecificHermitcrab-size_restricted.gif" class="video2">
+  </div>
+  <ul class="steps-list">
+    <li>Kapni skajin e stolit me duar, mbani këmbët së bashku dhe këmbët drejt.</li>
+    <li>Uleni trupin drejt poshtë.</li>
+    <li>Ngadalë shtypni përsëri deri në pikën e fillimit.</li>
+  </ul>
+  </div>
+</div>
+</div>
+<div class="goback">
+  <button onclick="history.back()"><i class='bx bx-arrow-back'></i>Kthehu Pas</button>
+  
+</div>
+
+
+</body>
+</html>
