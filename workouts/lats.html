@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@media only screen and (max-width: 1060px){
+  .videos, img {
+    flex: 70%;
+    width: 33.33%;
+    height: 100%;
+  }
+  .content {
+    flex: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+.videos, img {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+body{
+  background: linear-gradient(to right, #eeff00, #ffae00, #ff0000);
+}
+.content {
+border-radius: 15px;
+padding: 5px 30px;
+color: black;
+width: auto;
+height: 100%;
+font-family: "Poppins", sans-serif;
+}
+h3 {
+
+margin-left: 45%;
+font-size: 48px;
+}
+img {
+max-width: 100%;
+flex-direction: row;
+border-radius: 15px;
+border: 1px solid black;
+width: 500px;
+height: 500px;
+object-fit: cover;
+}
+.videos {
+width: 100%;
+border-radius: 15px;
+justify-content: space-between;
+display: inline-flex;
+border: 2px solid black;
+display: flex;
+flex-wrap: wrap;
+}
+.steps-list li{
+border-radius: 15px;
+background: rgba(204, 204, 204, 0.589);
+box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+font-size:1.5rem;
+margin: 0 0 1.5rem 1em;
+padding: 10px 15px 10px 35px;
+position: relative;
+}
+.steps-list li::before{
+background:#f7d307;
+border-radius:40px;
+box-shadow:0 0 3px rgba(0,0,0,.4),0 0 0 5px #ffffff,5px 0 2px rgba(0,0,0,.6);
+color:rgb(37, 37, 37);
+content: "➤";
+font-weight:700;
+height:40px;
+line-height:40px;
+left:-1.2em;
+position:absolute;
+text-align:center;
+top:50%;
+transform:translateY(-50%);
+width:40px;
+}
+.goback{
+  position: fixed;
+  right: 12px;
+  bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.726);
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goback button{
+  background: transparent;
+  border: none;
+  color: #e8f715;
+  font-size: 16px;
+}
+.goback button:hover{
+  cursor: pointer;
+}
+
+
+</style>
+<body>
+
+
+<div class="content">
+  <h3>Shpinë</h3>
+  <h2>Lat Pulldown</h2>
+  <div class="videos">
+    <img src="https://vidafitness.com.au/wp-content/uploads/2020/03/58-3498309-Lat-Pulldown-GIF-26427b91730d4039a39d557e21c9e494.gif" class="video1">
+    <img src="https://cdn.shopify.com/s/files/1/0250/0362/2496/files/1312.gif?v=1644918241" class="video2">
+  </div>
+  <ul class="steps-list">
+    <li>Mbërtheni shiritin me pëllëmbët e kthyera përpara, duart tuaja duhet të shtrihen në një distancë më të gjerë se gjerësia e shpatullave.</li>
+    <li>Ndërsa i keni të dy krahët të shtrirë përpara jush duke mbajtur shiritin, kthejeni bustin tuaj rreth 30 gradë duke nxjerrë gjoksin jashtë.</li>
+    <li>Tërhiqeni shiritin deri në nivelin e mjekrës ose pak më poshtë me një lëvizje të qetë, ndërsa shtrëngoni tehet e shpatullave së bashku.</li>
+    <li>Pas një sekonde shtrëngimi, ngrini ngadalë shiritin përsëri në pozicionin e fillimit kur krahët tuaj janë shtrirë plotësisht.</li>
+  </ul>
+  <h2>Bent Over Barbell Row</h2>
+  <div class="videos">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/workouts/2016/03/barbellrow-1457038583.gif" class="video1">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/workouts/2017/04/barbellrow-1491916911.gif" class="video2">
+  </div>
+  <ul class="steps-list">
+    <li>Kapni një shtangë me një kapje të shtrirë ose të shtrirë në gjerësinë e shpatullave.</li>
+    <li>Përkuluni përpara në ijet tuaja duke mbajtur një shpinë të sheshtë.</li>
+    <li>Tërhiqeni peshën drejt pjesës së sipërme të barkut.</li>
+    <li>Ulni peshën në mënyrë të kontrolluar dhe përsërisni.</li>
+  </ul>
+  <h2>Cable Pullover</h2>
+  <div class="videos">
+    <img src="https://images.squarespace-cdn.com/content/v1/56ee1fcbc6fc08c51ceae771/1463293593855-AT7IAYDL7NVSFWAZ3AON/%28Standing%29+Str-arm+Pulldowns+USING+Lat+Bar+%28Lg%29_400p.gif" class="video1">
+    <img src="https://www.verywellfit.com/thmb/uqVC5RlGDddpF8w3Ky6z4crr6K4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/57-3498474-Cable-Pulldown-GIF-af6c33517ac84b209086e0723d90890f.gif" class="video2">
+  </div>
+  <ul class="steps-list">
+    <li>Mund të përdorni çdo shtojcë. Kablloja duhet të vendoset deri në majë të makinës.</li>
+    <li>Kapni lidhjen tuaj dhe ecni disa hapa prapa. Shtyjeni disi prapanicën atje ku jeni duke u përkulur përpara.</li>
+    <li>Filloni lëvizjen me shpatullat tuaja dhe jo me bërrylat. Imagjinoni të përpiqeni të tërhiqni shtojcën përmes kofshëve tuaja në fund.</li>
+  </ul>
+  <h2>Pull Ups</h2>
+  <div class="videos">
+    <img src="https://i.gifer.com/origin/71/71f389a01bd54e13299a0849e85c40ee.gif" class="video1">
+    <img src="https://media.tenor.com/Lq4uADWXzpUAAAAd/pull-ups-working-out.gif" class="video2">
+  </div>
+  <ul class="steps-list">
+    <li>Mbërtheni shiritin me një kapje nga ana e sipërme, krahët dhe shpatullat të shtrira plotësisht.</li>
+    <li>Tërhiqeni trupin lart derisa mjekra juaj të jetë mbi shiritin.</li>
+    <li>Uleni trupin tuaj përsëri në pozicionin e fillimit.</li>
+  </ul>
+  </div>
+</div>
+</div>
+<div class="goback">
+  <button onclick="history.back()"><i class='bx bx-arrow-back'></i>Kthehu Pas</button>
+  
+</div>
+
+</body>
+</html>
