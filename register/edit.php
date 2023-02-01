@@ -11,7 +11,7 @@ $row = mysqli_fetch_assoc($result); //return an associative array representing t
 <head>
 <meta charset="utf-8">
   <title>Update Record</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <!-- <link rel="stylesheet" href="css/style.css" /> -->
 </head>
 <body>

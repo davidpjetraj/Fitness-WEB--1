@@ -7,7 +7,7 @@ require('db.php');?>
 <head>
     <meta charset="utf-8">
     <title>Client area</title>
-    <link rel="stylesheet" href="messageStyle.css" />
+    <link rel="stylesheet" href="../css/messageStyle.css" />
     <!-- <link rel="stylesheet" href="style.css" /> -->
 </head>
 <body>
