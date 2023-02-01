@@ -14,7 +14,7 @@ require('db.php');?>
 <div class="form">
         <p>Hey, <?php echo $_SESSION['username']; ?>!</p>
         <p>You are in user area.</p>      
-        <p><a href="index.php">Home</a> 
+        <p><a href="index.html">Home</a> 
         <a href="dashboard.php">Dashboard</a> 
         <a href="logout.php">Logout</a></p>
 

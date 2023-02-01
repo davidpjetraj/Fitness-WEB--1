@@ -7,13 +7,13 @@ require('db.php');?>
 <head>
     <meta charset="utf-8">
     <title>Dashboard - Client area</title>
-    <link rel="stylesheet" href="dashboardStyle.css" />
+    <link rel="stylesheet" href="css/dashboardStyle.css" />
 </head>
 <body>
 <div class="form">
         <p>Hey, <?php echo $_SESSION['username']; ?>!</p>
         <p>You are in user dashboard page.</p>      
-        <p><a href="index.php">Home</a> 
+        <p><a href="index.html">Home</a> 
         <a href="message.php">Leave a Comment</a> 
         <a href="logout.php">Logout</a></p>
 
