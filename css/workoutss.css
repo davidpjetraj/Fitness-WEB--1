@@ -8,12 +8,15 @@
 .tabela{
     background-color: rgb(95, 95, 95);
     padding-top: 11vh;
-    padding-left: 60vh;
+    padding-bottom: 11vh;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 480px;
 }
 table{
     width: 720px;
+    height: fit-content;
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -178,8 +181,12 @@ td:hover{
     align-items: flex-end;
 }
 .wourkoutsss{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10vh;
+    justify-content: center;
     padding-bottom: 10vh;
     background-color: rgb(255, 251, 0);
 }
@@ -205,3 +212,19 @@ button {
    }
 
 
+   @media screen and (max-width: 550px ) {
+        .tabela{
+            font-size: 8px;
+            padding-top: 5vh;
+            height: 310px;
+        }
+        tabel{
+            width: 300px;
+        }
+        th:last-child{
+            display: none;
+        }
+        .pushimi{
+            display: none;
+        }
+   }
